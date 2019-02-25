@@ -5,4 +5,4 @@ os: linux
 sudo: required
 
 install:
-  -compose install
+  -composer install
