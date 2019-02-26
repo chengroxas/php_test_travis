@@ -12,6 +12,9 @@ class IndexTest extends TestCase
 
     public function testIndex()
     {
-        $this->assertEquals(0, 0);
+        $src_path = realpath(__DIR__ . '/../') . '/src/';
+        $index = $src_path . 'index.php';
+        $value = require_once $index;
+        $this->assertStringContainsString('hello world', $value);
     }
 }
