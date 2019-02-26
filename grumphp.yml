@@ -7,5 +7,20 @@ parameters:
             verbose: true
             metadata:
                 priority: 200
-        php_cs_fixer: ~
-        php_line:
+        phpcsfixer: ~
+        git_commit_message:
+            enforce_capitalized_subject: false
+            enforce_single_lined_subject: false
+            case_insensitive: false
+            multiline: false
+            max_body_width: 1000
+            max_subject_width: 72
+            matchers:
+                # Regex comment:
+                # ^
+                #  ((fixup|squash)\! )?                                            # fixup or squash prefix
+                #  (build|ci|chore|docs|feat|fix|perf|refactor|revert|style|test)  # type
+                #  (\([^A-Z()]+\))?                                                # scope
+                #  : [^A-Z].+                                                      # message
+                # @see {https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional}
+                Commitlint failed: '/^((fixup|squash)\! )?(build|ci|chore|docs|feat|fix|perf|refactor|revert|style|test)(\([^A-Z()]+\))?: [^A-Z].+/'
