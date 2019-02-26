@@ -7,7 +7,13 @@ parameters:
             verbose: true
             metadata:
                 priority: 200
-        phpcsfixer: ~
+        phpstan:
+            autoload_file: ~
+            configuration: ~
+            level: 1
+            force_patterns: []
+            ignore_patterns: []
+            triggered_by: ['php']
         git_commit_message:
             enforce_capitalized_subject: false
             enforce_single_lined_subject: false
