@@ -1,0 +1,7 @@
+{
+    "require-dev": {
+        "phpro/grumphp": "^0.15.0",
+        "phpspec/phpspec": "^3.2.2",
+        "friendsofphp/php-cs-fixer": "~2"
+    }
+}

@@ -1,0 +1,10 @@
+parameters:
+    git_dir: .
+    bin_dir: ./vendor/bin
+    tasks:
+        phpspec:
+            format: progress
+            verbose: true
+            metadata:
+                priority: 200
+        php_cs_fixer: ~
