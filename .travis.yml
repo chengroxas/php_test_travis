@@ -8,5 +8,4 @@ install:
   - composer install
 
 after_success:
-  - bash <(curl -s https://codecov.io/bash) -t "1b70eeb4-3f17-470f-b1d3-7e5488425e74"
-#  CODECOV_TOKEN="1b70eeb4-3f17-470f-b1d3-7e5488425e74"
+  - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
