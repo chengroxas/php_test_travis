@@ -8,3 +8,4 @@ parameters:
             metadata:
                 priority: 200
         php_cs_fixer: ~
+        php_line:
