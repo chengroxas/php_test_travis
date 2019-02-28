@@ -29,4 +29,4 @@ parameters:
                 #  (\([^A-Z()]+\))?                                                # scope
                 #  : [^A-Z].+                                                      # message
                 # @see {https://github.com/marionebl/commitlint/tree/master/%40commitlint/config-conventional}
-                Commitlint failed: '/^((fixup|squash)\! )?(build|ci|chore|docs|feat|fix|perf|refactor|revert|style|test)(\([^A-Z()]+\))?: [^A-Z].+/'
+                Commitlint failed: '/^((fixup|squash)\! )?(build|ci|chore|docs|feat|fix|perf|refactor|revert|style|test|merge)(\([^A-Z()]+\))?: [^A-Z].+/'
