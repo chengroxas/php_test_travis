@@ -6,6 +6,8 @@ sudo: required
 
 install:
   - composer install
+test:
+  - true
 
 after_success:
   - bash <(curl -s https://codecov.io/bash) -t $CODECOV_TOKEN
